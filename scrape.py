@@ -8,6 +8,9 @@ import json
 import os
 from datetime import datetime
 
+# Output GeoJSON file
+geojson_file = "data/flight_paths.geojson" # replace with your desired path
+
 # ArcGIS FeatureServer endpoint
 url = "https://services7.arcgis.com/mnhQTdIYDA7UoY2l/arcgis/rest/services/b322b378-b726-4bd3-93fe-bab0b311191b-production/FeatureServer/0/query"
 
@@ -27,8 +30,6 @@ def log_message(message):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(log_file, "a", encoding="utf-8") as log:
         log.write(f"[{timestamp}] {message}\n")
-
-geojson_file = "flight_paths.geojson"
 
 # Load existing features if file exists
 if os.path.exists(geojson_file):
