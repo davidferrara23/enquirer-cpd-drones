@@ -1,7 +1,7 @@
 ### CINCINNATI ENQUIRER
 ### Cincinnati Police Department
 ### Skydio Drone Flight Paths and Calls for Service
-### by: David Ferrara
+### by David Ferrara
 
 ### VARS
 
@@ -46,7 +46,7 @@ parse_cfs_address <- function(address) {
   return(list(block_num = block_num, street_name = street_name))
 }
 
-# Simple exact-match function
+# Match block-level addresses with city centerline GIS
 match_address_to_centerline <- function(address, centerlines_df) {
   # Parse address
   parsed <- parse_cfs_address(address)
@@ -88,7 +88,7 @@ match_address_to_centerline <- function(address, centerlines_df) {
   }
 }
 
-# Separate function for matching CFS to centerlines
+# Match CFS with city centerline GIS
 match_cfs_to_centerlines <- function(cfs_df, centerlines_df) {
   message("Matching CFS addresses to street centerlines...")
   
@@ -470,7 +470,7 @@ cfs <- cfs %>%
     time_before_dispatch = as.numeric(difftime(dispatch_time_primary_unit, create_time_incident, units = "mins"))
   )
 
-# Remove CAD calls of non-significance
+# Remove CAD calls we don't need
 cfs <- cfs %>%
   filter(
     !(disposition_text %in% c(
