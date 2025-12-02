@@ -1,6 +1,6 @@
 # Cincinnati Police Drone Squad flight paths
 
-This project from The Cincinnati Enquirer allows for the scraping and analysis of flight paths from the Cincinnati Police Department's drone program, operated through Skydio. [The data is used in several stories published in The Enquirer's Nov. 30 feature: Cincinnati police's $4.8M drone program takes off. How does the eye in the sky work?](https://www.cincinnati.com/story/news/crime/2025/11/30/cincinnati-police-drones-are-now-first-responders-heres-how-it-works/86280621007/)
+This project from The Cincinnati Enquirer allows for the scraping and analysis of flight paths from the Cincinnati Police Department's drone program, operated through Skydio. The data is used in several stories published in The Enquirer's Nov. 30 feature: [Cincinnati police's $4.8M drone program takes off. How does the eye in the sky work?](https://www.cincinnati.com/story/news/crime/2025/11/30/cincinnati-police-drones-are-now-first-responders-heres-how-it-works/86280621007/)
 
 You may also modify the ArcGIS endpoint and [scrape any other department using Skydio](https://www.google.com/search?q=site:https://cloud.skydio.com/dashboard/&filter=0).
 
@@ -57,4 +57,5 @@ For more information on [Cincinnati's CAD data](https://data.cincinnati-oh.gov/s
 ## Citation
 
 If you use this data or code, please cite it and [link to the published story](https://www.cincinnati.com/story/news/crime/2025/11/30/cincinnati-police-drones-are-now-first-responders-heres-how-it-works/86280621007/).
+
 
