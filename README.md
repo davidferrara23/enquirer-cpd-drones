@@ -1,6 +1,6 @@
 # Cincinnati Police Drone Squad flight paths
 
-This project from The Cincinnati Enquirer allows for the scraping and analysis of flight paths from the Cincinnati Police Department's drone program, operated through SkyDio. The data is used in several stories published in The Enquirer's Nov. 30 feature: Cincinnati police's $4.8M drone program takes off. How does the eye in the sky work?
+This project from The Cincinnati Enquirer allows for the scraping and analysis of flight paths from the Cincinnati Police Department's drone program, operated through Skydio. [The data is used in several stories published in The Enquirer's Nov. 30 feature: Cincinnati police's $4.8M drone program takes off. How does the eye in the sky work?](https://www.cincinnati.com/story/news/crime/2025/11/30/cincinnati-police-drones-are-now-first-responders-heres-how-it-works/86280621007/)
 
 You may also modify the ArcGIS endpoint and [scrape any other department using Skydio](https://www.google.com/search?q=site:https://cloud.skydio.com/dashboard/&filter=0).
 
@@ -22,7 +22,7 @@ If you plan to scrape the flight paths of another department that uses Skydio, r
 1. **Load the Skydio dashboard** for the department, if available.
 2. **Open the Network tab in your browser and filter for "featureserver".**
 3. **Look for a GET like "FeatureServer?f=json".** The filename provided is the suffix of the endpoint for your department. For example, Cincinnati's is `/mnhQTdIYDA7UoY2l/arcgis/rest/services/b322b378-b726-4bd3-93fe-bab0b311191b-production/FeatureServer`.
-6. **Add the suffix to the root URL for the ArcGIS api**, `https://services7.arcgis.com/`. For example, Cincinnati's should be `https://services7.arcgis.com/mnhQTdIYDA7UoY2l/arcgis/rest/services/b322b378-b726-4bd3-93fe-bab0b311191b-production/FeatureServer`.
+6. **Add the suffix to the root URL for the ArcGIS API**, `https://services7.arcgis.com/`. For example, Cincinnati's should be `https://services7.arcgis.com/mnhQTdIYDA7UoY2l/arcgis/rest/services/b322b378-b726-4bd3-93fe-bab0b311191b-production/FeatureServer`.
 7. **Add `/0/query` to the end.** For example, the full Cincinnati endpoint is `https://services7.arcgis.com/mnhQTdIYDA7UoY2l/arcgis/rest/services/b322b378-b726-4bd3-93fe-bab0b311191b-production/FeatureServer/0/query`.
 
 ## Notes
@@ -56,4 +56,5 @@ For more information on [Cincinnati's CAD data](https://data.cincinnati-oh.gov/s
 
 ## Citation
 
-If you use this data or code, please cite it and link to the published story.
+If you use this data or code, please cite it and [link to the published story](https://www.cincinnati.com/story/news/crime/2025/11/30/cincinnati-police-drones-are-now-first-responders-heres-how-it-works/86280621007/).
+
