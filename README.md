@@ -52,10 +52,11 @@ Flight paths obtained via the ArcGIS API return the following attributes:
 - `organization_id`: UUID for the department.
 - `shape_length`: Flight path coordinates from launch to landing.
 
-For more information on [Cincinnati's CAD data](https://data.cincinnati-oh.gov/safety/PDI-Police-Data-Initiative-Police-Calls-for-Servic/gexm-h6bt/about_data) and [centerline database](https://data.cincinnati-oh.gov/dataset/Street-Centerlines/ece8-i5x4/about_data), please visit their respective sites.
+For more information on [Cincinnati's CAD data](https://data.cincinnati-oh.gov/safety/PDI-Police-Data-Initiative-Police-Calls-for-Servic/gexm-h6bt/about_data) and [centerline database](https://data-cagisportal.opendata.arcgis.com/datasets/f5616d30d58945d6aac2cfe8aa35d373_27/explore), please visit their respective sites.
 
 ## Citation
 
 If you use this data or code, please cite it and [link to the published story](https://www.cincinnati.com/story/news/crime/2025/11/30/cincinnati-police-drones-are-now-first-responders-heres-how-it-works/86280621007/).
+
 
 
